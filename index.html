@@ -1,126 +1,708 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>JK Talent Solutions</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
+<head>
+    <title>JK Talent Solutions</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <body>
-        <header>
-            <!-- place navbar here -->
-            <nav class="navbar navbar-expand-lg navbar-light py-4">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse container-fluid" id="navbarNav">
-                        <ul  class="navbar-nav d-flex justify-content-between w-100 me-5">
-                            <li class="nav-item">
-                                <img class="img-fluid" style="height: 50px;" src="./images/lakshmi logo.png" alt="">
-                            </li>
-                            <li class="nav-item">
-                                <a style="color: #FF0000; font-weight: 600;" class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Services
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li ><a style="color: #FF0000; font-weight: 600;" class="dropdown-item" href="#">Action</a></li>
-                                    <li><a style="color: #FF0000; font-weight: 600;" class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr style="color: #FF0000; font-weight: 600;" class="dropdown-divider"></li>
-                                    <li><a  style="color: #FF0000; font-weight: 600;"class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">Sectors</a>
-                            </li>
-                            <li class="nav-item">
-                                <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">Training & Development</a>
-                            </li>
-                            <li class="nav-item">
-                                <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">Career</a>
-                            </li>
-                            <li class="nav-item">
-                                <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">Clients</a>
-                            </li>
-                            <li class="nav-item">
-                                <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">Contact</a>
-                            </li>
-                         
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <style>
+            /* Ensure the logo is always visible and aligned to the left */
+            .navbar-brand {
+                margin-right: auto;
+                /* Align logo to the left */
+            }
+
+            /* Ensure the toggler is hidden on larger screens */
+            .navbar-toggler {
+                display: none;
+                /* Hide toggler by default */
+            }
+
+            @media (max-width: 991px) {
+                .navbar-toggler {
+                    display: block;
+                    /* Show toggler on mobile and tablet screens */
+                }
+            }
+        </style>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-light py-4">
+            <div class="container-fluid">
+                <!-- Logo for All Views -->
+                <a class="navbar-brand ms-0 ms-lg-3 " href="#">
+                    <img class="img-fluid" style="height: 50px;" src="./images/logo/lakshmi logo.png" alt="Logo">
+                </a>
+
+                <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-between w-100 ms-0 ms-lg-5 me-5">
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link active" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownServices" role="button">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownSectors" role="button">
+                                Sectors
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownSectors">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a style="color: #FF0000; font-weight: 600;" class="dropdown-item"
+                                        href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <style>
+                            /* Hide the dropdown menu by default */
+                            .dropdown-menu-hover {
+                                display: none;
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                z-index: 1000;
+                            }
+
+                            /* Show the dropdown menu when hovering over the parent item */
+                            .nav-item:hover .dropdown-menu-hover {
+                                display: block;
+                            }
+
+                            /* Additional styling to ensure the dropdown menu appears as needed */
+                            .nav-item {
+                                position: relative;
+                            }
+
+                            .dropdown-menu-hover {
+                                background-color: white;
+                                border: 1px solid #ddd;
+                                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                            }
+
+                            /* Style dropdown items as needed */
+                            .dropdown-item {
+                                color: #FF0000;
+                                font-weight: 600;
+                                text-decoration: none;
+                                padding: 8px 16px;
+                            }
+
+                            .dropdown-item:hover {
+                                background-color: #f8f9fa;
+                            }
+                        </style>
+
+
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">Training &
+                                Development</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner Css -->
+        <style>
+            .carousel-item {
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .carousel-caption {
+                bottom: 20px;
+            }
+        </style>
+        <!-- Banner Css -->
+
+        <div id="carouselExampleIndicators" class="carousel slide ">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('./images/slider/slider\ 2.jpg');">
+                    <!-- Content -->
+                </div>
+                <div class="carousel-item" style="background-image: url('./images/slider/slider\ 5.png');">
+                    <!-- Content -->
+                </div>
+                <div class="carousel-item" style="background-image: url('./images/slider/slider\ 6.png');">
+                    <!-- Content -->
+                </div>
+            </div>
+            <style>
+                .carousel-item {
+                    background-size: cover;
+                    /* Ensure the image covers the div */
+                    background-position: center;
+                    /* Center the image */
+                    height: 500px;
+                    /* Default height for larger screens */
+                }
+
+                /* Media query for mobile devices */
+                @media (max-width: 768px) {
+                    .carousel-item {
+                        height: 150px;
+                        /* Height for mobile screens */
+                    }
+                }
+
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    .carousel-item {
+                        height: 300px;
+                        /* Height for tablet screens */
+                    }
+                }
+            </style>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+
+
+    </header>
+    <main>
+        <div class="container my-3 my-lg-5">
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-12 col-lg-6 my-4 my-lg-0 text-center">
+                    <img class="img-fluid" src="./images/flow 1.png" alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h3 class="fw-bold text-center text-lg-start" style="color: #FF0000;">About Us</h3>
+                    <p class="text-center text-lg-start" style="font-weight: 500;">We are one of the top providers of integrated facilities management
+                        services in India, specializing in the fields of healthcare, education,
+                        public administration (including state, local, and federal agencies), 
+                        airports, trains, metro infrastructure, and retail. We are one of the
+                        few firms in India with a broad geographic reach and clientele that
+                        serves nearly every end-user segment since we offer an extensive
+                        array of integrated facilities management services across several 
+                        industries.</p>
+                       <div class="text-center text-lg-start">
+                       <button class="p-2 " style="border: none; background-color: #C80036;color: white;">View More</button>
+
+                       </div>
+                </div>
+            </div>
+        </div>
+        <!-- images start-->
+        <div class="container my-5 text-center">
+            <h1 class="text-center fw-bolder mb-0 mb-lg-5" style="color: #C80036;">OUR SERVICES</h1>
+            <div class="row my-3">
+                <div class="col-12 col-lg-3 col-md-4 my-3 my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h i 1.png" alt="">
+                        <div class="overlay">
+                            <h6> Comprehensive HR Services</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 my-3 my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h i 2.png" alt="">
+                        <div class="overlay">
+                            <h6>Integrated Facility Management</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 my-3 my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h i 3.png" alt="">
+                        <div class="overlay">
+                           <h6>Private Security&Manned Guarding</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h  i 4.png" alt="">
+                        <div class="overlay">
+                           <h6>Catering</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 d-lg-none d-none d-md-block my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h i 5.png" alt="">
+                        <div class="overlay">
+                           <h6>Other Services</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3 my-lg-3">
+                <div class="col-12 col-lg-3 col-md-4 d-lg-block d-md-none my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h i 5.png" alt="">
+                        <div class="overlay">
+                            <h6>Other Services</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover img {
+    filter: brightness(60%) /* Decrease image opacity on hover */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FF0000; /* Red background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1.5; /* Show overlay on hover */
+}
+
+        </style>
+        
+        <!-- images end -->
+
+
+         <!-- Sectors start -->
+                <div style="background-color: #EEEEEE;" class="sector pb-4 ">
+                        <h1 class="text-center fw-bolder pt-5" style="color: #FF0000;">OUR SECTORS</h1>
+                        <div class="container">   
+                        <div class="row my-5">
+                            <div class="col-12 col-lg-4 text-center   my-3">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2 ">
+                                        <img class="img-fluid " src="./images/sector logo/sector logo 1.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start text-center" style="color: #FF0000;">IT ( Information Technology )</h5>
+                                        <p class="text-lg-start text-center" style="color: #1A2130;">
+                                            Our company specializes in providing cutting-edge Information Technology solutions tailored to meet diverse business needs.
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center my-3">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2 text-center">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 2.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Hospitals</h5>
+                                        <p class="text-lg-start"  style="color: #1A2130;">In this industry, we offer services to hospitals 
+                                            and medical facilities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center mt-3">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 3.png" alt="">
+                                    </div>
+                                    <div class="col-12  col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Education</h5>
+                                        <p class="text-lg-start" style="color: #1A2130;">We offer our services to government officials, private and public schools, electricity boards, and district consumer forums.</p>
+                                    </div>
+                                </div>
+                            </div>
+                     
+                        </div>
+                        <div class="row  ">
+                           
+                            <div class="col-12 col-lg-4 text-center mb-4">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 4.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">BPO (Business Process Outsourcing)</h5>
+                                        <p class="text-lg-start" style="color: #1A2130;">Our company specializes in BPO services, offering efficient outsourcing solutions for various business processes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center mb-4">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 5.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Banking and Financial Services</h5>
+                                        <p class="text-lg-start" style="color: #1A2130;">We work with branches in the financial services and banking industries.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center ">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 6.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Public Administration</h5>
+                                        <p class="text-lg-start" style="color: #1A2130;">We provide our services to state, local, and government officials as well as to district and power board consumer forums.</p>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                          
+                        </div>
+
+                        <div class="row my-3">
+                            <div class="col-12 col-lg-4 text-center mb-4">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 7.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Hotels</h5>
+                                        <p class="text-lg-start" style="color: #1A2130;">In this industry, we offer services to hospitals 
+                                            and medical facilities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center mb-4">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 8.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Airport</h5>
+                                        <p class="text-lg-start" style="color: #1A2130;">We offer our services in metro stations, train stations, and airports.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center">
+                                <div class="row align-items-center justify-content-center my-3">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 9.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Industrial</h5>
+                                        <p class="text-lg-start" style="color: #1A2130;">We work with manufacturing companies, offering our services.</p>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                          
+                        </div>
+                    </div>
+                    
+                </div>
+         <!-- Sectors end -->
+
+         <!-- work process start -->
+         <div id="start" class="work-process">
+            <h1>Our Work Process</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="counter" data-target="30">0</div>
+                        <p>Employees</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="counter" data-target="200">0</div>
+                        <p>Clients</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="counter" data-target="3" data-speed="100">0</div>
+                        <p>Total Years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            // Function to start counting
+            const startCounters = () => {
+                const counters = document.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    counter.innerText = '0';
+                    const updateCounter = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const speed = counter.getAttribute('data-speed') || 10; // Default speed for other counters
+                        const increment = target / (200 * (speed / 10));
+                        if (count < target) {
+                            counter.innerText = `${Math.ceil(count + increment)}`;
+                            setTimeout(updateCounter, speed);
+                        } else {
+                            counter.innerText = `${target}+`;
+                        }
+                    };
+                    updateCounter();
+                });
+            };
+        
+            // Intersection Observer callback
+            const handleIntersection = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounters();
+                        observer.unobserve(entry.target); // Stop observing after starting the counters
+                    }
+                });
+            };
+        
+            // Create an Intersection Observer
+            const observer = new IntersectionObserver(handleIntersection, {
+                threshold: 0.1 // Adjust threshold as needed
+            });
+        
+            // Observe the #start element
+            observer.observe(document.getElementById('start'));
+        </script>
+        
+        <style>
+            .work-process {
+                background-color: #ff0000;
+                color: white;
+                padding: 50px 0;
+                text-align: center;
+            }
+            .work-process h1 {
+                margin-bottom: 30px;
+                font-size: 2.5em;
+            }
+            .counter {
+                font-size: 2em;
+                font-weight: bold;
+            }
+        </style>
+        
+         <!-- work process end -->
+
+         <!-- Benefits start -->
+          <div class="container-fluid text-center p-2 p-lg-5">
+            <h2 class="fw-bold mb-4" style="color: #FF0000;">Benefits Of Integrated Services Provided By Lakshmi Talent Solutions</h2>
+          <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 1.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >All-encompassing Method</h5>
+                        <p class="text-lg-start">The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 2.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >personalized remedy</h5>
+                        <p class="text-lg-start" >At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 3.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >Experience and Experts</h5>
+                        <p class="text-lg-start">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 4.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >Cost Savings</h5>
+                        <p class="text-lg-start" >The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 5.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >Real-Time Monitoring &
+                            Reporting</h5>
+                        <p class="text-lg-start">At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 6.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >Access to specialized
+                            services </h5>
+                        <p class="text-lg-start">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
+                </div>
+              
+              </div>
+          </div>
+          
+        </div>
+         <!-- Benefits end -->
+
+    </main>
+    <footer>
+        <style>
+            .footer {
+                background-color: #ff0000;
+                color: white;
+                padding: 40px 0;
+            }
+            .footer h5 {
+                margin-bottom: 10px;
+                font-size: 1.5em;
+                position: relative; /* Position relative for the pseudo-element */
+                padding-bottom: 10px; /* Space for the line */
+            }
+            .footer h5::after {
+                content: "";
+                display: block;
+                width: 100%; /* Width of the line */
+                height: 1px; /* Thickness of the line */
+                background-color: white;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%); /* Center the line horizontally */
+            }
+            .footer hr {
+                border-top: 1px solid white;
+                width: 140px; /* Adjusted width */
+                margin: 10px auto 20px auto; /* Center the hr element */
+            }
+            .footer a {
+                color: white;
+                text-decoration: none;
+            }
+            .footer a:hover {
+                text-decoration: underline;
+            }
+            .footer .social-icons a {
+                margin: 0 10px;
+                font-size: 1.5em;
+            }
+            .footer .contact-info p {
+                margin: 5px 0;
+            }
+            .footer .contact-info i {
+                margin-right: 10px;
+            }
+            .footer .copyright {
+                margin-top: 20px;
+                text-align: center;
+                border-top: 1px solid white;
+                padding-top: 10px;
+            }
+            @media (max-width: 768px) {
+                .footer .row.text-center.text-md-left {
+                    text-align: center;
+                }
+                .footer .row.text-center.text-md-left > div {
+                    margin-bottom: 20px;
+                }
+                .footer h5::after {
+                    width: 50%; /* Adjust width if necessary */
+                }
+            }
+        </style>
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Connections</h5>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><h6>Home</h6></a></li>
+                            <li><a href="#"><h6>Services</h6></a></li>
+                            <li><a href="#"><h6>Career</h6></a></li>
+                            <li><a href="#"><h6>About</h6></a></li>
+                            <li><a href="#"><h6>Sectors</h6></a></li>
+                            <li><a href="#"><h6>Contact us</h6></a></li>
                         </ul>
                     </div>
-                </div>
-            </nav>
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/slider 1.png" class="d-block w-100" alt="First Slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First Slide</h5>
-                            <p>Description for the first slide.</p>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Get in touch</h5>
+                        <hr>
+                        <div class="contact-info">
+                            <p><i class="fas fa-envelope"></i> hr@lakshmitalentsolutions.com</p>
+                            <p><i class="fas fa-phone"></i> 8807880764, 8438438413</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Annai, Parvathi Nagar, opp.to Collector Office, Vengikkal, Tiruvannamalai, Tamilnadu 606604</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://via.placeholder.com/800x400?text=Second+Slide" class="d-block w-100" alt="Second Slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second Slide</h5>
-                            <p>Description for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://via.placeholder.com/800x400?text=Third+Slide" class="d-block w-100" alt="Third Slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third Slide</h5>
-                            <p>Description for the third slide.</p>
+                    <div class="col-md-4 text-center">
+                        <img src="./images/logo/logo2.png" alt="Lakshmi Talent Solutions Logo" class="img-fluid mb-3">
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="copyright fw-bolde">&copy; 2024 JK Talent Solutions.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-            
-        </header>
-        <main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
 
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
 </html>
