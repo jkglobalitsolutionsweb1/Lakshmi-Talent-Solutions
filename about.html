@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JK Talent Solutions</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <style>
+            /* Ensure the logo is always visible and aligned to the left */
+            .navbar-brand {
+                margin-right: auto;
+                /* Align logo to the left */
+            }
+
+            /* Ensure the toggler is hidden on larger screens */
+            .navbar-toggler {
+                display: none;
+                /* Hide toggler by default */
+            }
+
+            @media (max-width: 991px) {
+                .navbar-toggler {
+                    display: block;
+                    /* Show toggler on mobile and tablet screens */
+                }
+            }
+        </style>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-light py-4">
+            <div class="container-fluid">
+                <!-- Logo for All Views -->
+                <a class="navbar-brand ms-0 ms-lg-3 " href="#">
+                    <img class="img-fluid" style="height: 50px;" src="./images/logo/Lakshmi logo.png" alt="Logo">
+                </a>
+
+                <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-between w-100 ms-0 ms-lg-5 me-5">
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link active" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="services.html"
+                                id="navbarDropdownServices" role="button">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
+                                <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
+                                <li><a class="dropdown-item" href="private.html">Private Security And Manned Guarding</a></li>
+                                <li><a class="dropdown-item" href="catering.html">Catering</a></li>
+                                <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="sectors.html"
+                                id="navbarDropdownSectors" role="button">
+                                Sectors
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownSectors">
+                                <li><a class="dropdown-item" href="it.html">IT ( Information Technology )</a></li>
+                                <li><a class="dropdown-item" href="bpo.html">BPO ( Business Process Outsourcing )</a></li>
+                                <li><a class="dropdown-item" href="hotels.html">Hotels</a></li>
+                                <li><a class="dropdown-item" href="hospital.html">Hospitals And Healthcare</a></li>
+                                <li><a class="dropdown-item" href="education.html">Education</a></li>
+                                <li><a class="dropdown-item" href="banking.html">Banking And Financial Services</a></li>
+                                <li><a class="dropdown-item" href="public.html">Public Administration</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrial</a></li>
+                                <li><a class="dropdown-item" href="retail.html">Retail</a></li>
+                                <li><a class="dropdown-item" href="othersectors.html">Other Sectors</a></li>
+                              
+                            </ul>
+                        </li>
+                        <style>
+                            /* Hide the dropdown menu by default */
+                            .dropdown-menu-hover {
+                                display: none;
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                z-index: 1000;
+                            }
+
+                            /* Show the dropdown menu when hovering over the parent item */
+                            .nav-item:hover .dropdown-menu-hover {
+                                display: block;
+                            }
+
+                            /* Additional styling to ensure the dropdown menu appears as needed */
+                            .nav-item {
+                                position: relative;
+                            }
+
+                            .dropdown-menu-hover {
+                                background-color: white;
+                                border: 1px solid #ddd;
+                                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                            }
+
+                            /* Style dropdown items as needed */
+                            .dropdown-item {
+                                color: #FF0000;
+                                font-weight: 600;
+                                text-decoration: none;
+                                padding: 8px 16px;
+                            }
+
+                            .dropdown-item:hover {
+                                background-color: #f8f9fa;
+                            }
+                        </style>
+
+
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="training.html">Training &
+                                Development</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="career.html">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="clients.html">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+      
+
+
+
+    </header>
+   <main>
+
+    <!-- Banner start -->
+    <style>
+        .banner {
+            background: linear-gradient(to right top, #ff0000, #ff2d26, #ff443f, #ff5755, #ff6969);
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        .banner h1 {
+            font-size: 2rem;
+        }
+        @media (min-width: 576px) {
+            .banner h1 {
+                font-size: .5rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+        }
+        @media (min-width: 992px) {
+            .banner h1 {
+                font-size: 2.5rem;
+            }
+        }
+        @media (min-width: 1200px) {
+            .banner h1 {
+                font-size: 3rem;
+            }
+        }
+
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            padding-left: 0; /* Default for mobile and small screens */
+            margin-left: 0; /* Default for mobile and small screens */
+        }
+
+        @media (min-width: 768px) {
+            .about-container {
+                align-items: flex-start;
+                text-align: left;
+                margin-left: 150px; /* 100px margin from the left side on larger screens */
+                padding-left: 0; /* No padding on the left side */
+            }
+        }
+        .underline {
+    border-bottom: 2px solid white; /* Adjust the color and thickness as needed */
+    display: inline-block; /* Ensure the border only applies to the text width */
+    padding-bottom: 5px; /* Optional: adjust the space between the text and the underline */
+}
+
+    </style>
+      <div class="banner">
+        <div class="row w-100">
+            <div class="col-12 col-md-8 col-lg-6 about-container">
+                <h1 class="fw-bold underline">About</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner end -->
+     <!-- content start -->
+        <div class="row align-items-center justify-content-center p-3 w-100">
+            <div style="font-weight: 500;" class="col-12 col-lg-6">
+                <p>Lakshmi Talent Solutions provider Comprehensive HR Services & integrated services to the Technology and Knowledge Services companies across India.
+                    <br> We have tie up with clients belonging to various sectors like manufacturing, health care, BPO, IT etc .
+                    <br> We have a huge collection of data base with differentiated qualifications, experience and skills set.
+                    <br> We provide cost effective Quality ,Value added services , Turn around time for our esteemed clients and potential candidates</p>
+                    <div class="row align-items-center">
+                        <div class="col-1"><img src="./images/box 1.png" alt=""></div>
+                        <div class="col-10 my-4 my-lg-0">
+                            <p style="font-weight: 500;">“One of the fastest-growing integrated facility management firms
+                                in India is Lakshmi Talent Solution”.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <img class="img-fluid" src="./images/about image 2.png" alt="">
+            </div>
+        </div>
+        <div class="container my-5">
+            <p   style="color: #1A2130; font-weight: 500;">Our extensive range of integrated facility management services enables us to offer customized bundled solutions that cater precisely to each
+                customer's unique needs and requirements. This makes us the go-to provider for comprehensive, all-encompassing solutions tailored to meet
+                diverse customer demands efficiently and effectively.</p>
+        </div>
+
+     <!-- content end -->
+      <div style="background-image: linear-gradient(to right top, #ff0000, #f82521, #ef3834, #e54645, #da5353);" class="p-4">
+        <div class="container ">
+            <div class="row justify-content-center align-items-center text-light">
+                <div class="col-12 col-lg-4 ">
+                    <h2 class="underline text-light">VISION</h2>
+                    <p class="text-start">Our goal is to become the top choice for our
+                        valued customers in safeguarding, maintaining,
+                        and managing their assets. We achieve this by
+                        providing tailored solutions using cutting-edge 
+                        technology and high-quality, convenient 
+                        infrastructure management services.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-4 my-lg-0">
+                    <img class="img-fluid" src="./images/valayam.png" alt="">
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h2 class="underline text-light">STRATEGIES</h2>
+                    <p>Forge new partnerships to leverage emerging technologies, harnessing our company's resources to pioneer innovative products and services. Capitalize on our established client base to expand offerings and provide additional services, driving growth and enhancing customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+         
+      </div>
+      <style>
+     
+    </style>
+      
+
+      <div class="container mb-5">
+        <h1 style="color: #FF0000
+;" class="my-5 text-center">Fundamental Principles</h1>
+        <div class="row no-gutters">
+          <div class="col-12 col-md-4 p-2 ">
+            <div class="custom-column">
+              <h5> Reliability</h5>
+              <p>delivering excellent service and quality while 
+                retaining a solid reputation for dependability
+                 in the sector.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-2">
+            <div class="custom-column">
+              <h5>Persistent</h5>
+              <p>having the willpower to overcome obstacles and achieve success. persistently working to achieve and surpass objectives.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-2">
+            <div class="custom-column">
+              <h5>Social Benefit</h5>
+              <p>Make the most of the value you can add. Include the people who are most important. Obtain contracts and money. </p>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-12 col-md-4 p-2">
+            <div class="custom-column">
+              <h5> Integrity</h5>
+              <p>following a rigid system of moral and ethical standards. maintaining integrity and openness in all business interactions.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-2">
+            <div class="custom-column">
+              <h5>Passion</h5>
+              <p>having a bright outlook and a strong desire to achieve one's objectives. being motivated to go above and beyond. </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-2">
+            <div class="custom-column">
+              <h5>Precision</h5>
+              <p>Accuracy and attention to detail regularly result in high-quality work that is meticulous in both approach and execution. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+            .custom-column {
+        background-image: linear-gradient(to right top, #ff0000, #f82521, #ef3834, #e54645, #da5353);
+      color: white;
+      padding: 50px;
+      margin: 5px 0;
+      border-radius: 5px;
+     
+    }
+    @media (max-width: 576px){
+        .custom-column{
+            padding: 20px;
+        }
+    }
+      </style>
+      
+                    <style>
+                        .shad{
+                            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                        }
+                    </style>
+
+                <div class="container mb-4 shad">
+                    <div class="row align-items-center justify-content-center gx-1">
+                        <div class="col-12 d-flex flex-column flex-md-row align-items-center">
+                        <div class="d-flex flex-wrap flex-sm-nowrap align-items-center mb-3 mb-md-0" style="gap: 30px;">
+                            <img src="./images/box-2.png" alt="" class="d-none d-sm-block">
+                            <img src="./images/founder.png" alt="">
+                        </div>
+                        <div class="col d-flex flex-column mt-3 mt-md-0">
+                            <h1 class="">VISION</h1>
+                            <p>"Known for its innovative solutions and exceptional client service, JK Global IT Solutions sets the
+                            standard in web services with its cutting-edge technologies and commitment to exceeding
+                            customer expectations."</p>
+                    
+                            <h1 class="">MISSION</h1>
+                            <p>Our goal is to connect with as many businesses as possible, offering top-tier IT solutions through
+                            a robust and expansive network of skilled teams, all while ensuring client satisfaction and
+                            fostering a culture of happiness among our employees."</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container my-5">
+                    <div class="text-center my-5">
+                        <h1 style="color: #FF0000;">Why LAKSHMI Talent Solutions ?</h1>
+                        <p style="font-weight: 600;">You can locate the job on Jk Talent Solutions if it's available online.</p>
+                    </div>
+
+                    <div class="row my-3 align-items-center">
+                            <div class="col-12 col-lg-5">
+                                <img class="img-fluid" src="./images/about image 3.png" alt="">
+                            </div>
+                            <div class="col-12 col-lg-7 my-5 my-lg-0">
+                                <h5 style="border-radius: 5px; background-color: #FF0000;" class="text-light  d-inline p-1 p-lg-2 my-2">Multiple clients and Industry</h5>
+                                <p class="my-2 mb-3" style="font-weight: 600;">We have partnerships with companies in a variety of industries, including
+                                    manufacturing, healthcare, BPO, and IT.</p>
+                                <h5 style="border-radius: 5px; background-color: #FF0000;" class="text-light  d-inline p-1 p-lg-2my-2">Multiple clients and Industry</h5>
+                                <p class="my-2 mb-3" style="font-weight: 600;">We have a sizable database of people with a variety of backgrounds, 
+                                    experiences, and skill sets.</p>
+                                <h5 style="border-radius: 5px; background-color: #FF0000;" class="text-light  d-inline p-1 p-lg-2">Multiple clients and Industry</h5>
+                                <p class="my-2 mb-3" style="font-weight: 600;">For our valued clients and prospective recruits, we offer turn-around times, value-added services, and quality at a reasonable price.</p>
+                            </div>
+                    </div>
+               
+                </div>
+
+      
+
+
+   </main>
+   
+    <footer>
+        <style>
+            .footer {
+                background-color: #ff0000;
+                color: white;
+                padding: 40px 0;
+            }
+            .footer h5 {
+                margin-bottom: 10px;
+                font-size: 1.5em;
+                position: relative; /* Position relative for the pseudo-element */
+                padding-bottom: 10px; /* Space for the line */
+            }
+            .footer h5::after {
+                content: "";
+                display: block;
+                width: 100%; /* Width of the line */
+                height: 1px; /* Thickness of the line */
+                background-color: white;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%); /* Center the line horizontally */
+            }
+            .footer hr {
+                border-top: 1px solid white;
+                width: 140px; /* Adjusted width */
+                margin: 10px auto 20px auto; /* Center the hr element */
+            }
+            .footer a {
+                color: white;
+                text-decoration: none;
+            }
+            .footer a:hover {
+                text-decoration: underline;
+            }
+            .footer .social-icons a {
+                margin: 0 10px;
+                font-size: 1.5em;
+            }
+            .footer .contact-info p {
+                margin: 5px 0;
+            }
+            .footer .contact-info i {
+                margin-right: 10px;
+            }
+            .footer .copyright {
+                margin-top: 20px;
+                text-align: center;
+                border-top: 1px solid white;
+                padding-top: 10px;
+            }
+            @media (max-width: 768px) {
+                .footer .row.text-center.text-md-left {
+                    text-align: center;
+                }
+                .footer .row.text-center.text-md-left > div {
+                    margin-bottom: 20px;
+                }
+                .footer h5::after {
+                    width: 50%; /* Adjust width if necessary */
+                }
+            }
+        </style>
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Connections</h5>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html"><h6>Home</h6></a></li>
+                            <li><a href="#"><h6>Services</h6></a></li>
+                            <li><a href="#"><h6>Career</h6></a></li>
+                            <li><a href="#"><h6>About</h6></a></li>
+                            <li><a href="#"><h6>Sectors</h6></a></li>
+                            <li><a href="#"><h6>Contact us</h6></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Get in touch</h5>
+                        <hr>
+                        <div class="contact-info">
+                            <p><i class="fas fa-envelope"></i> hr@Lakshmitalentsolutions.com</p>
+                            <p><i class="fas fa-phone"></i> 8807880764, 8438438413</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Annai, Parvathi Nagar, opp.to Collector Office, Vengikkal, Tiruvannamalai, Tamilnadu 606604</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="./images/logo/logo2.png" alt="Lakshmi Talent Solutions Logo" class="img-fluid mb-3">
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="copyright fw-bolde">&copy; 2024 JK Talent Solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>

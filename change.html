@@ -1,0 +1,16 @@
+<div id="header"></div>
+
+<!-- Your page content goes here -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch('./test.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading the header:', error);
+            });
+    });
+</script>
