@@ -151,72 +151,64 @@
                 </div>
             </div>
         </nav>
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        <!-- Banner Css -->
-        <style>
-            .carousel-item {
-                height: 100vh;
-                background-size: cover;
-                background-position: center;
-            }
-
-            .carousel-caption {
-                bottom: 20px;
-            }
-        </style>
-        <!-- Banner Css -->
-
-        <div id="carouselExampleIndicators" class="carousel slide ">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image: url('./images/slider/slider\ 2.jpg');">
-                    <!-- Content -->
-                </div>
-                <div class="carousel-item" style="background-image: url('./images/slider/slider\ 5.png');">
-                    <!-- Content -->
-                </div>
-                <div class="carousel-item" style="background-image: url('./images/banner/banner\ 11.png');">
-                    <!-- Content -->
+     <!-- banner -->
+     <style>
+        .carousel-item {
+            height: 500px; /* Adjust the height as needed */
+            background-size: cover;
+            background-position: center;
+        }
+        .carousel-caption {
+            bottom: 20px; /* Adjust the position of captions */
+        }
+    </style>
+     <script>
+        $(document).ready(function() {
+            $('#carouselExampleIndicators').carousel({
+                interval: 5000 // Adjust the interval as needed
+            });
+        });
+    </script>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('./images/slider/slider 2.jpg');">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Content for the first slide -->
                 </div>
             </div>
-            <style>
-                .carousel-item {
-                    background-size: cover;
-                    /* Ensure the image covers the div */
-                    background-position: center;
-                    /* Center the image */
-                    height: 500px;
-                    /* Default height for larger screens */
-                }
-
-                /* Media query for mobile devices */
-                @media (max-width: 768px) {
-                    .carousel-item {
-                        height: 150px;
-                        /* Height for mobile screens */
-                    }
-                }
-
-                @media (min-width: 768px) and (max-width: 1024px) {
-                    .carousel-item {
-                        height: 300px;
-                        /* Height for tablet screens */
-                    }
-                }
-            </style>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
+            <div class="carousel-item" style="background-image: url('./images/slider/slider 5.png');">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Content for the second slide -->
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('./images/banner/banner 11.png');">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Content for the third slide -->
+                </div>
+            </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+     <!-- banner -->
+
 
 
 
