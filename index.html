@@ -17,6 +17,7 @@
 
 <body>
     <header>
+
         <style>
             /* Ensure the logo is always visible and aligned to the left */
             .navbar-brand {
@@ -42,7 +43,7 @@
             <div class="container-fluid">
                 <!-- Logo for All Views -->
                 <a class="navbar-brand ms-0 ms-lg-3 " href="#">
-                    <img class="img-fluid" style="height: 50px;" src="./images/logo/lakshmi logo.png" alt="Logo">
+                    <img class="img-fluid" style="height: 50px;" src="./images/JK LOGO.png" alt="Logo">
                 </a>
 
                 <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
@@ -55,9 +56,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav d-flex justify-content-between w-100 ms-0 ms-lg-5 me-5">
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link active" aria-current="page"
+                            <a style="color: #000000; font-weight: 600;" class="nav-link active" aria-current="page"
                                 href="index.html">Home</a>
                         </li>
+                        
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
                         </li>
@@ -67,9 +69,10 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
-                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
                                 <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
                                 <li><a class="dropdown-item" href="private.html">Private Security And Manned Guarding</a></li>
+                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
+
                                 <li><a class="dropdown-item" href="catering.html">Catering</a></li>
                                 <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li>
                                
@@ -151,77 +154,177 @@
                 </div>
             </div>
         </nav>
-        
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-     <!-- banner -->
-     <style>
-        .carousel-item {
-            height: 500px; /* Adjust the height as needed */
-            background-size: cover;
-            background-position: center;
-        }
-        .carousel-caption {
-            bottom: 20px; /* Adjust the position of captions */
-        }
-    </style>
-     <script>
-        $(document).ready(function() {
-            $('#carouselExampleIndicators').carousel({
-                interval: 5000 // Adjust the interval as needed
-            });
-        });
-    </script>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('./images/slider/slider 2.jpg');">
-                <div class="carousel-caption d-none d-md-block">
-                    <!-- Content for the first slide -->
-                </div>
+        <div class="slider">
+            <div class="slides">
+               
+                <div class="slide"><img src="./images/Banner 1.png" alt="Slide 2"></div>
+                <div class="slide"><img src="./images/payroll banner.png" alt="Slide 2"></div>
+                <div class="slide"><img src="./images/Banner 2.png" alt="Slide 3"></div>
+                <div class="slide"><img src="./images/Banner 3.png" alt="Slide 1"></div>
             </div>
-            <div class="carousel-item" style="background-image: url('./images/slider/slider 5.png');">
-                <div class="carousel-caption d-none d-md-block">
-                    <!-- Content for the second slide -->
-                </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('./images/banner/banner 11.png');">
-                <div class="carousel-caption d-none d-md-block">
-                    <!-- Content for the third slide -->
-                </div>
-            </div>
+            <button class="nav-button prev">&#10094;</button>
+            <button class="nav-button next">&#10095;</button>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-     <!-- banner -->
+        
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+        
+            .slider {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+        
+            .slides {
+                display: flex;
+                transition: transform 1s ease-in-out;
+            }
+        
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+            }
+        
+            .slide img {
+                width: 100%;
+                display: block;
+            }
+        
+            .nav-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 1000;
+            }
+        
+            .prev {
+                left: 10px;
+            }
+        
+            .next {
+                right: 10px;
+            }
+        </style>
+        
+        <script>
+            const slides = document.querySelector('.slides');
+            const slideCount = document.querySelectorAll('.slide').length;
+            let currentIndex = 0;
+            let slideInterval;
+        
+            function goToSlide(index) {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+                currentIndex = index;
+            }
+        
+            function nextSlide() {
+                if (currentIndex < slideCount - 1) {
+                    goToSlide(currentIndex + 1);
+                } else {
+                    goToSlide(0);
+                }
+            }
+        
+            function prevSlide() {
+                if (currentIndex > 0) {
+                    goToSlide(currentIndex - 1);
+                } else {
+                    goToSlide(slideCount - 1);
+                }
+            }
+        
+            function startSlideShow() {
+                slideInterval = setInterval(nextSlide, 3000); // Change slides every 3 seconds
+            }
+        
+            function stopSlideShow() {
+                clearInterval(slideInterval);
+            }
+        
+            document.querySelector('.next').addEventListener('click', () => {
+                nextSlide();
+                stopSlideShow();
+                startSlideShow();
+            });
+        
+            document.querySelector('.prev').addEventListener('click', () => {
+                prevSlide();
+                stopSlideShow();
+                startSlideShow();
+            });
+        
+            startSlideShow();
+        </script>
+        
 
+      
 
 
 
     </header>
     <main>
-        <div class="container my-3 my-lg-5">
+        <div class="container-fluid my-5 p-3">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid" src="./images/hr image.png" alt="">
+                </div>
+                <div class="col-lg-7 text-left">
+                    <h4 class="fw-bold" style="color: #F01905;">JK Talent Solution</h4>
+                    <div class="d-flex my-3">
+                        <img src="./images/Line 2 (1).png" alt="">
+                    <h1 class="ms-4" style="color: #F01905;"><b> We offer economical HR solutions 
+
+                   
+                        for your company. </b></h1>
+                    </div>
+                        <p class="mt-4" style="color: #151515; font-weight: 600;">As your HR solutions partner, JK Talent Solutions is devoted to providing the greatest quality at the lowest possible cost to customers. We make the required investments in technology and processes to improve efficiency at all levels.</p>
+                        <p style="color: #151515; font-weight: 600;">JK Talent Solutions prioritizes you and your workers and offers an uncompromised experience.</p>
+                        <div class="row text-lg-left text-left ms-lg-0 ms-5 ms-md-0 ">
+                            <div class="col-lg-4 my-2">
+                                <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Efficiency</p>
+                                <p style="font-weight: 600;" > <img src="./images/tick.png" alt=""> Innovation</p>
+                            </div>
+                            <div class="col-lg-4 my-2">
+                                <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Security</p>
+                                <p style="font-weight: 600;"><img src="./images/tick.png" alt=""> Customization</p>
+                            </div>
+                            <div class="col-lg-4 my-2">
+                                <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Integrity</p>
+                                <p style="font-weight: 600;"><img src="./images/tick.png" alt=""> Affordable</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 text-center">
+                                <img class="img-fluid" src="./images/under.png" alt="">
+                            </div>
+                            <div class="col-lg-10">
+                                <p style="font-weight: 600;">Understanding your workflow, tailoring to your needs, and swiftly transitioning to the leading HR management platform in the industry.</p>
+                            </div>
+                        </div>
+                        <div class="text-lg-left text-center">
+                        <img  style="height: 70px;" class="img-fluid my-3" src="./images/trust.png" alt="">
+
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container my-3 my-lg-5 mt-4">
             <div class="row justify-content-center align-items-center ">
                 <div class="col-12 col-lg-6 my-4 my-lg-0 text-center">
                     <img class="img-fluid" src="./images/flow 1.png" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
                     <h3 class="fw-bold text-center text-lg-start" style="color: #FF0000;">About Us</h3>
-                    <p class="text-center text-lg-start" style="font-weight: 500;">We are one of the top providers of integrated facilities management
+                    <p class="text-center text-lg-start" style="font-weight: 600;">We are one of the top providers of integrated facilities management
                         services in India, specializing in the fields of healthcare, education,
                         public administration (including state, local, and federal agencies), 
                         airports, trains, metro infrastructure, and retail. We are one of the
@@ -340,7 +443,7 @@
                                     </div>
                                     <div class="col-12 col-lg-10">
                                         <h5 class="fw-bold text-lg-start text-center" style="color: #FF0000;">IT ( Information Technology )</h5>
-                                        <p class="text-lg-start text-center" style="color: #1A2130;">
+                                        <p class="text-lg-start text-center" style="color: #1A2130; font-weight: 600;">
                                             Our company specializes in providing cutting-edge Information Technology solutions tailored to meet diverse business needs.
                                         </p>
                                     </div>
@@ -355,7 +458,7 @@
                                     </div>
                                     <div class="col-12 col-lg-10">
                                         <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Hospitals</h5>
-                                        <p class="text-lg-start"  style="color: #1A2130;">In this industry, we offer services to hospitals 
+                                        <p class="text-lg-start"  style="color: #1A2130;font-weight: 600;">In this industry, we offer services to hospitals 
                                             and medical facilities.</p>
                                     </div>
                                 </div>
@@ -367,7 +470,7 @@
                                     </div>
                                     <div class="col-12  col-lg-10">
                                         <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Education</h5>
-                                        <p class="text-lg-start" style="color: #1A2130;">We offer our services to government officials, private and public schools, electricity boards, and district consumer forums.</p>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We offer our services to government officials, private and public schools, electricity boards, and district consumer forums.</p>
                                     </div>
                                 </div>
                             </div>
@@ -382,7 +485,7 @@
                                     </div>
                                     <div class="col-12 col-lg-10">
                                         <h5 class="fw-bold text-lg-start" style="color: #FF0000;">BPO (Business Process Outsourcing)</h5>
-                                        <p class="text-lg-start" style="color: #1A2130;">Our company specializes in BPO services, offering efficient outsourcing solutions for various business processes.</p>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">Our company specializes in BPO services, offering efficient outsourcing solutions for various business processes.</p>
                                     </div>
                                 </div>
                             </div>
@@ -393,7 +496,7 @@
                                     </div>
                                     <div class="col-12 col-lg-10">
                                         <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Banking and Financial Services</h5>
-                                        <p class="text-lg-start" style="color: #1A2130;">We work with branches in the financial services and banking industries.</p>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We work with branches in the financial services and banking industries.</p>
                                     </div>
                                 </div>
                             </div>
@@ -404,7 +507,7 @@
                                     </div>
                                     <div class="col-12 col-lg-10">
                                         <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Public Administration</h5>
-                                        <p class="text-lg-start" style="color: #1A2130;">We provide our services to state, local, and government officials as well as to district and power board consumer forums.</p>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We provide our services to state, local, and government officials as well as to district and power board consumer forums.</p>
                                     </div>
                                 </div>
                             </div>
@@ -420,7 +523,7 @@
                                     </div>
                                     <div class="col-12 col-lg-10">
                                         <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Hotels</h5>
-                                        <p class="text-lg-start" style="color: #1A2130;">In this industry, we offer services to hospitals 
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">In this industry, we offer services to hospitals 
                                             and medical facilities.</p>
                                     </div>
                                 </div>
@@ -432,7 +535,7 @@
                                     </div>
                                     <div class="col-12 col-lg-10">
                                         <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Airport</h5>
-                                        <p class="text-lg-start" style="color: #1A2130;">We offer our services in metro stations, train stations, and airports.</p>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We offer our services in metro stations, train stations, and airports.</p>
                                     </div>
                                 </div>
                             </div>
@@ -443,7 +546,7 @@
                                     </div>
                                     <div class="col-12 col-lg-10">
                                         <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Industrial</h5>
-                                        <p class="text-lg-start" style="color: #1A2130;">We work with manufacturing companies, offering our services.</p>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We work with manufacturing companies, offering our services.</p>
                                     </div>
                                 </div>
                             </div>
@@ -538,40 +641,40 @@
 
          <!-- Benefits start -->
           <div class="container-fluid text-center p-2 p-lg-5">
-            <h2 class="fw-bold mb-4" style="color: #FF0000;">Benefits Of Integrated Services Provided By Lakshmi Talent Solutions</h2>
+            <h2 class="fw-bold mb-4" style="color: #FF0000;">Benefits Of Integrated Services Provided By JK Talent Solutions</h2>
           <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 1.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >All-encompassing Method</h5>
-                        <p class="text-lg-start">The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
+                        <p style="font-weight: 600;" class="text-lg-start">The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
                 </div>
                 <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 2.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >personalized remedy</h5>
-                        <p class="text-lg-start" >At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
+                        <p style="font-weight: 600;" class="text-lg-start" >At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
                 </div>
                 <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 3.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >Experience and Experts</h5>
-                        <p class="text-lg-start">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
+                        <p style="font-weight: 600;" class="text-lg-start">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
                 </div>
                 <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 4.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >Cost Savings</h5>
-                        <p class="text-lg-start" >The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
+                        <p style="font-weight: 600;" class="text-lg-start" >The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
                 </div>
                 <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 5.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >Real-Time Monitoring &
                             Reporting</h5>
-                        <p class="text-lg-start">At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
+                        <p style="font-weight: 600;" class="text-lg-start">At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
                 </div>
                 <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 6.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >Access to specialized
                             services </h5>
-                        <p class="text-lg-start">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
+                        <p style="font-weight: 600;" class="text-lg-start">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
                 </div>
               
               </div>
@@ -647,42 +750,44 @@
         </style>
         
         <div class="footer">
-            <div class="container">
-                <div class="row text-center text-md-left">
+            <div class="container-fluid ">
+                <div class="row text-center text-md-left ms-lg-5 me-lg-5">
                     <div class="col-md-4 mb-4 mb-md-0">
                         <h5>Connections</h5>
                         <hr>
                         <ul class="list-unstyled">
                             <li><a href="index.html"><h6>Home</h6></a></li>
-                            <li><a href="#"><h6>Services</h6></a></li>
-                            <li><a href="#"><h6>Career</h6></a></li>
-                            <li><a href="#"><h6>About</h6></a></li>
-                            <li><a href="#"><h6>Sectors</h6></a></li>
-                            <li><a href="#"><h6>Contact us</h6></a></li>
+                            <li><a href="career.html"><h6>Career</h6></a></li>
+                            <li><a href="about.html"><h6>About</h6></a></li>
+                            <li><a href="contact.html"><h6>Contact us</h6></a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 mb-4 mb-md-0">
                         <h5>Get in touch</h5>
                         <hr>
                         <div class="contact-info">
-                            <p><i class="fas fa-envelope"></i> hr@lakshmitalentsolutions.com</p>
+                            <p><i class="fas fa-envelope"></i> hr@JKtalentsolutions.com</p>
                             <p><i class="fas fa-phone"></i> 8807880764, 8438438413</p>
-                            <p><i class="fas fa-map-marker-alt"></i> Annai, Parvathi Nagar, opp.to Collector Office, Vengikkal, Tiruvannamalai, Tamilnadu 606604</p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p> Annai, Parvathi Nagar, opp.to Collector Office, Vengikkal, Tiruvannamalai, Tamilnadu 606604</p>
+                            </div>
+                  
                         </div>
                     </div>
-                    <div class="col-md-4 text-center">
-                        <img src="./images/logo/logo2.png" alt="Lakshmi Talent Solutions Logo" class="img-fluid mb-3">
+                    <div class="col-md-4 text-center ">
+                        <img src="./images/JK LOGO 2.png" alt="JK Talent Solutions Logo" class="img-fluid mb-3">
                         <div class="social-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61559849413983"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/jktalentsolution_off"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/talent_jk47795"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/@JKTALENTSOLUTIONS-o4l"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-5 me-lg-5 ms-lg-5">
                     <div class="col-12">
-                        <p class="copyright fw-bolde">&copy; 2024 JK Talent Solutions.</p>
+                        <p class="copyright fw-bold">&copy; <b>2024 JK Talent Solutions.</b> </p>
                     </div>
                 </div>
             </div>

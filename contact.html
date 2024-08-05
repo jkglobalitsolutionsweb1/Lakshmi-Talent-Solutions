@@ -42,7 +42,7 @@
             <div class="container-fluid">
                 <!-- Logo for All Views -->
                 <a class="navbar-brand ms-0 ms-lg-3 " href="#">
-                    <img class="img-fluid" style="height: 50px;" src="./images/logo/Lakshmi logo.png" alt="Logo">
+                    <img class="img-fluid" style="height: 50px;" src="./images/JK LOGO.png" alt="Logo">
                 </a>
 
                 <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
@@ -67,11 +67,12 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
-                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management
-                                        Services</a></li>
+                           
                                 <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
                                 <li><a class="dropdown-item" href="private.html">Private Security And Manned
                                         Guarding</a></li>
+                                        <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management
+                                            Services</a></li>
                                 <li><a class="dropdown-item" href="catering.html">Catering</a></li>
                                 <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li>
 
@@ -150,7 +151,7 @@
                                 href="clients.html">Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 700;" class="nav-link"
+                            <a style="color: black; font-weight: 700;" class="nav-link"
                                 href="contact.html">Contact</a>
                         </li>
                     </ul>
@@ -272,7 +273,7 @@
 
         <!-- Banner end -->
         <!-- content start -->
-           <div class="container my-5">
+           <div class="container-fluid px-5 my-5">
             <div class="row align-items-center ">
                 <div class="col-12 col-lg-4">
                     <div class="text-center">
@@ -286,21 +287,74 @@
                     </div>
                 </div>
                 <div style="background-image: linear-gradient(to right top, #ff0000, #f82521, #ef3834, #e54645, #da5353);border-radius: 10px;" class="col-12 col-lg-8 p-4">
-                  <div class="">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 ">
-                            <input style="border-radius: 5px; border: none; outline: none;" class="my-3 w-100 p-1" type="text" placeholder="Full Name* ">
-                            <input style="border-radius: 5px; outline: none; border: none;" class="my-3 w-100 p-1" type="email" placeholder="Email* ">
-                            <input style="border-radius: 5px; outline: none; border: none;" class="my-3 w-100 p-1" type="number" placeholder="Phone Number* ">
-    
+                    <form id="contact-form">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6">
+                          <input id="full-name" style="border-radius: 5px; border: none; outline: none;" class="my-3 w-100 p-2" type="text" placeholder="Full Name*" required>
+                          <input id="email" class="my-3 w-100 p-2" type="email" placeholder="Email*" style="border: none; outline: none; border-radius: 5px;" required>
+                          <input id="phone-number" style="border-radius: 5px; outline: none; border: none;" class="my-3 w-100 p-2" type="tel" placeholder="Phone Number*" required>
                         </div>
                         <div class="col-lg-6">
-                            <textarea  class="w-100 " placeholder="Comment Here" style=" height: 160px; border: none; outline: none; border-radius: 10px; "  name="" id=""></textarea>
+                          <textarea id="comment" class="w-100" placeholder="Comment Here" style=" height: 160px; border: none; outline: none; border-radius: 10px;" required></textarea>
                         </div>
-                    </div>
+                      </div>
+                      <div class="row">
+                        <div class="col text-center">
+                          <button style="border: none; background-color: black; color: white;border-radius: 5px;" class="text-center px-4 py-2 " type="submit">Submit</button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
-                 
-                </div>
+                  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                  <script>
+                    // Initialize EmailJS with your user ID
+                    emailjs.init("nVL-ns9kz9MFYVYun"); // Replace with your EmailJS user ID
+                  
+                    // Function to handle form submission
+                    function handleFormSubmit(event) {
+                      event.preventDefault(); // Prevent default form submission
+                      
+                      // Get form values
+                      var fullName = document.getElementById('full-name').value;
+                      var email = document.getElementById('email').value;
+                      var phoneNumber = document.getElementById('phone-number').value;
+                      var comment = document.getElementById('comment').value;
+                      
+                      // Create email template parameters
+                      var templateParams = {
+                        from_name: fullName,
+                        from_email: email,
+                        phone_number: phoneNumber,
+                        message: comment
+                      };
+                      
+                      // Send email using EmailJS
+                      emailjs.send('service_dts8xgb', 'template_ivi4xcw', templateParams)
+                        .then(function(response) {
+                          console.log('Email sent successfully:', response);
+                          alert('Your message has been sent!');
+                        }, function(error) {
+                          console.error('Error sending email:', error);
+                          alert('Failed to send message. Please try again.');
+                        });
+                      
+                      // Create WhatsApp message link
+                      var whatsappNumber = '9894924809'; // Replace with your WhatsApp number
+                      var message = encodeURIComponent(`Hello, my name is ${fullName}. You can reach me at ${email} or ${phoneNumber}. Here is my message: ${comment}`);
+                      var whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
+                      
+                      // Open WhatsApp chat link in a new tab
+                      window.open(whatsappLink, '_blank');
+                    }
+                    
+                    // Add event listener to the form
+                    document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
+                  </script>
+                  
+
+                  
+
+                  
             </div>
           
            </div>
@@ -318,134 +372,103 @@
                 color: white;
                 padding: 40px 0;
             }
-
             .footer h5 {
                 margin-bottom: 10px;
                 font-size: 1.5em;
-                position: relative;
-                /* Position relative for the pseudo-element */
-                padding-bottom: 10px;
-                /* Space for the line */
+                position: relative; /* Position relative for the pseudo-element */
+                padding-bottom: 10px; /* Space for the line */
             }
-
             .footer h5::after {
                 content: "";
                 display: block;
-                width: 100%;
-                /* Width of the line */
-                height: 1px;
-                /* Thickness of the line */
+                width: 100%; /* Width of the line */
+                height: 1px; /* Thickness of the line */
                 background-color: white;
                 position: absolute;
                 bottom: 0;
                 left: 50%;
-                transform: translateX(-50%);
-                /* Center the line horizontally */
+                transform: translateX(-50%); /* Center the line horizontally */
             }
-
             .footer hr {
                 border-top: 1px solid white;
-                width: 140px;
-                /* Adjusted width */
-                margin: 10px auto 20px auto;
-                /* Center the hr element */
+                width: 140px; /* Adjusted width */
+                margin: 10px auto 20px auto; /* Center the hr element */
             }
-
             .footer a {
                 color: white;
                 text-decoration: none;
             }
-
             .footer a:hover {
                 text-decoration: underline;
             }
-
             .footer .social-icons a {
                 margin: 0 10px;
                 font-size: 1.5em;
             }
-
             .footer .contact-info p {
                 margin: 5px 0;
             }
-
             .footer .contact-info i {
                 margin-right: 10px;
             }
-
             .footer .copyright {
                 margin-top: 20px;
                 text-align: center;
                 border-top: 1px solid white;
                 padding-top: 10px;
             }
-
             @media (max-width: 768px) {
                 .footer .row.text-center.text-md-left {
                     text-align: center;
                 }
-
-                .footer .row.text-center.text-md-left>div {
+                .footer .row.text-center.text-md-left > div {
                     margin-bottom: 20px;
                 }
-
                 .footer h5::after {
-                    width: 50%;
-                    /* Adjust width if necessary */
+                    width: 50%; /* Adjust width if necessary */
                 }
             }
         </style>
-
+        
         <div class="footer">
-            <div class="container">
-                <div class="row text-center text-md-left">
+            <div class="container-fluid ">
+                <div class="row text-center text-md-left ms-lg-5 me-lg-5">
                     <div class="col-md-4 mb-4 mb-md-0">
                         <h5>Connections</h5>
                         <hr>
                         <ul class="list-unstyled">
-                            <li><a href="index.html">
-                                    <h6>Home</h6>
-                                </a></li>
-                            <li><a href="#">
-                                    <h6>Services</h6>
-                                </a></li>
-                            <li><a href="#">
-                                    <h6>Career</h6>
-                                </a></li>
-                            <li><a href="#">
-                                    <h6>About</h6>
-                                </a></li>
-                            <li><a href="#">
-                                    <h6>Sectors</h6>
-                                </a></li>
-                            <li><a href="#">
-                                    <h6>Contact us</h6>
-                                </a></li>
+                            <li><a href="index.html"><h6>Home</h6></a></li>
+                            <li><a href="career.html"><h6>Career</h6></a></li>
+                            <li><a href="about.html"><h6>About</h6></a></li>
+                            <li><a href="contact.html"><h6>Contact us</h6></a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 mb-4 mb-md-0">
                         <h5>Get in touch</h5>
                         <hr>
                         <div class="contact-info">
-                            <p><i class="fas fa-envelope"></i> hr@Lakshmitalentsolutions.com</p>
+                            <p><i class="fas fa-envelope"></i> hr@JKtalentsolutions.com</p>
                             <p><i class="fas fa-phone"></i> 8807880764, 8438438413</p>
-                            <p><i class="fas fa-map-marker-alt"></i> Annai, Parvathi Nagar, opp.to Collector Office,
-                                Vengikkal, Tiruvannamalai, Tamilnadu 606604</p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p> Annai, Parvathi Nagar, opp.to Collector Office, Vengikkal, Tiruvannamalai, Tamilnadu 606604</p>
+                            </div>
+                  
                         </div>
                     </div>
-                    <div class="col-md-4 text-center">
-                        <img src="./images/logo/logo2.png" alt="Lakshmi Talent Solutions Logo" class="img-fluid mb-3">
+                    <div class="col-md-4 text-center ">
+                        <img src="./images/JK LOGO 2.png" alt="JK Talent Solutions Logo" class="img-fluid mb-3">
                         <div class="social-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61559849413983"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/jktalentsolution_off"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/talent_jk47795"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/@JKTALENTSOLUTIONS-o4l"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-5 me-lg-5 ms-lg-5">
                     <div class="col-12">
-                        <p class="copyright fw-bolde">&copy; 2024 JK Talent Solutions.</p>
+                        <p class="copyright fw-bold">&copy; <b>2024 JK Talent Solutions.</b> </p>
                     </div>
                 </div>
             </div>
